@@ -258,11 +258,11 @@ ProcedureDLL DisableTouchWhenFullscreen(WindowID, State)
   EndIf
   ProcedureReturn Result
   DataSection
-    IID_IPropertyStore:
+    IID_IPropertyStore: ; 886D8EEB-8CF2-4446-8D02-CDBA1DBDCF99 ; http://referencesource.microsoft.com/#PresentationFramework/src/Framework/MS/Internal/AppModel/ComGuids.cs,26
       Data.l $886D8EEB
       Data.w $8CF2, $4446
       Data.b $8D, $02, $CD, $BA, $1D, $BD, $CF, $99
-    DISABLE_TOUCH_WHEN_FULLSCREEN:
+    DISABLE_TOUCH_WHEN_FULLSCREEN: ; 32CE38B2-2C9A-41B1-9BC5-B3784394AA44 ; https://msdn.microsoft.com/en-us/library/windows/desktop/jj553591(v=vs.85).aspx
       Data.l $32CE38B2
       Data.w $2C9A, $41B1
       Data.b $9B, $C5, $B3, $78, $43, $94, $AA, $44
@@ -270,6 +270,8 @@ ProcedureDLL DisableTouchWhenFullscreen(WindowID, State)
 EndProcedure
 ; IDE Options = PureBasic 5.60 (Windows - x64)
 ; ExecutableFormat = Shared dll
+; CursorPosition = 254
+; FirstLine = 221
 ; Folding = -
 ; EnableThread
 ; EnableXP
